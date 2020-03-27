@@ -1,0 +1,175 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar-brand{
+    font-size: 25px;
+    margin-left: 10px;
+}
+/*
+.max-viewport{
+    min-height: 100vh;
+}
+*/
+.bgimg-1{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(16.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 660px;
+}
+.bg-dropdown{
+    background-color: #F0EBFF;
+}
+.mycontent{
+    padding-top: 360px;
+    box-sizing: border-box;
+}
+.mycontent h3{
+    font-size: 35px;
+}
+.mycontent h1{
+    font-size: 70px;
+}
+/*
+#signup i{
+    position: absolute;
+}
+.icon{
+    padding: 10px;
+    min-width: 40px;
+}
+*/
+#services{
+    background-color: lightgray;
+}
+#services .card{
+    background-color: #F0EBFF;
+    margin-top: 40px;
+    border: 1px solid gray;
+}
+#services .fa{
+    background-color: #68E9F2;
+    padding-top: 20px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.fa-desktop{
+    padding-top: 25px;
+}
+#team{
+    background-color: #F0EBFF;
+}
+#team h1{
+    font-weight: bold;
+}
+#testimonials{
+    background-color: lightgray;
+    height: 650px;
+}
+#testimonials h1{
+    font-weight: bold;
+}
+#footer{
+    background-color: dimgray;
+}
+.footerhead a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+.footerhead small{
+    font-size: 11px;
+    margin-right: 10px;
+}
+.footertext h6{
+    font-weight: bold;
+    font-size: 18px;
+}
+.footertext a{
+    text-decoration: none;
+    font-size: 13px;
+    color: darkgray;
+}
+.footertext a:hover{
+    color: gainsboro;
+}
+.last{
+    font-size: 14px;
+}
+#para{
+    font-size: 50px;
+    font-weight: 500;
+}
+.bg-1{
+    background-color: lightgray;
+}
+.bg-card{
+    background-color: #F0EBFF;
+}
+#contact .card{
+    border: 1px solid black;
+}
+#faqs button{
+    text-decoration: none;
+}
+#faqs button:hover{
+    text-decoration: underline;
+}
+#faqs .card{
+	background-color: #F0EBFF;
+}
+#faqs .card-body{
+    padding-left: 30px;
+	background-color: white;
+}
+
+@media screen and (min-width: 1200px){
+    .mycontent h3{font-size: 35px;}
+    .mycontent h1{font-size: 70px;}
+    .bgimg{height: 700px;}
+    #about{height: 700px;}   
+}
+@media screen and (max-width:1201px) and (min-width: 990px){
+    .mycontent h3{font-size: 30px;}
+    .mycontent h1{font-size: 60px;}
+    .bgimg{height: 660px;}
+    #testimonials{height: 600px;}
+}
+@media screen and (max-width:991px) and (min-width: 768px){
+    .mycontent{padding-top: 390px;}
+    .mycontent h3{font-size: 20px;}
+    .mycontent h1{font-size: 50px;}
+    .footerhead a{font-size: 27px;}
+    .footertext h6{font-size: 16px;}
+    .footertext a{font-size: 12px;}
+    .bgimg{height: 660px;}
+    #testimonials{height: 500px;}
+    #about{height: 580px;}   
+}
+@media screen and (max-width:769px) and (min-width: 601px){
+    .mycontent{padding-top: 390px;}
+    .mycontent h3{font-size: 20px;}
+    .mycontent h1{font-size: 50px;}
+    .footerhead a{font-size: 27px;}
+    .footertext h6{font-size: 16px;}
+    .footertext a{font-size: 12px;}
+    .bgimg{height: 660px;}
+    #testimonials{height: 720px;}
+    #about{height: 580px;}
+    #img1{height: 230px;}
+}
+@media screen and (max-width:600px){
+    .mycontent{padding-top: 390px;}
+    .mycontent h3{font-size: 20px;}
+    .mycontent h1{font-size: 40px;}
+    .footerhead a{font-size: 27px;}
+    .footertext h6{font-size: 16px;}
+    .footertext a{font-size: 12px;}
+    .bgimg{height: 660px;}
+    #testimonials{height: 770px;}
+    #about{height: 650px;}
+    #img1{height: 200px;}    
+}

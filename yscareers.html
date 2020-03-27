@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon2.ico" type="image" rel="icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="ystechnical.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YS Technical- Careers</title>
+</head>
+<body>
+  
+ 
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+     
+     <a href="ystechnical.html" class="navbar-brand text-warning">YS Technical</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     
+     <div class="collapse navbar-collapse" id="mynavbar">
+         <ul class="navbar-nav text-center mr-auto ml-4">
+             <li class="nav-item"><a href="ysabout.html" class="nav-link">About</a></li>
+             <li class="nav-item dropdown">
+                 <a href="#" class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">Services</a>
+                 <div class="dropdown-menu text-center bg-dropdown">
+                     <a href="yshardware.html" class="dropdown-item">Hardware</a>
+                     <a href="yssoftware.html" class="dropdown-item">Software</a>
+                     <a href="ystechsupport.html" class="dropdown-item">Technical Support</a>
+                     <a href="ysmarketing.html" class="dropdown-item">Digital Marketing</a>
+                     <a href="yswriting.html" class="dropdown-item">Content Writing</a>
+                     
+                 </div>
+             </li>
+             <li class="nav-item"><a href="ysprojects.html" class="nav-link">Projects</a></li>
+             <li class="nav-item"><a href="yscareers.html" class="nav-link">Careers</a></li>
+             <li class="nav-item"><a href="yscontact.html" class="nav-link">Contact Us</a></li>
+         </ul>
+         
+         <form class="form-inline">
+            <input type="text" class="form-control mr-2" placeholder="Search">
+            <button type="submit" class="btn btn-primary my-2 mx-auto">Search</button>
+             
+         </form>
+         
+     </div>
+       
+  </nav>
+  
+ <section id="careers" class="p-5 bg-1">
+    <div class="container">
+        <h1 class="font-weight-bold text-center pt-4 mb-4">Careers</h1>
+        <h3 class="text-info text-center mt-5">We Are Hiring...</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi tenetur cum et saepe debitis illo, placeat expedita sequi natus quisquam vitae asperiores! Non eaque soluta, accusantium officia necessitatibus quam excepturi.</p>
+        <h3 class="text-info text-center mt-4">Current Openings</h3>
+        <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-4 text-center mx-auto">
+        <img src="19.jpg" alt="" class="img-fluid">
+        <h4 class="text-center mt-2">Front End Developer</h4>
+        <button type="button" class="btn btn-primary" data-target="#apply" data-toggle="modal">Apply Now</button>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-4 text-center mx-auto">
+        <img src="5.jpg" alt="" class="img-fluid">
+        <h4 class="text-center mt-2">Marketing Executive</h4>
+        <button type="button" class="btn btn-primary" data-target="#apply" data-toggle="modal">Apply Now</button>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 mb-4 text-center mx-auto">
+        <img src="17.jpg" alt="" class="img-fluid">
+        <h4 class="text-center mt-2">Graphic Designer</h4>
+        <button type="button" class="btn btn-primary" data-target="#apply" data-toggle="modal">Apply Now</button>
+        </div>
+        </div>
+        <div class="modal fade" id="apply">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-info">Job Application Form</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <form name="myform" onsubmit="return validation()" action="yscareers.html" class="bg-light">
+                    <div class="modal-body">
+                        
+                           <div class="form-group">
+                            <label class="font-weight-bold">Full Name :</label>
+                            <input type="text" name="name" id="name" class="form-control mb-2"><p id="messagename" class="text-danger"></p>
+                            <label class="font-weight-bold">Email Id :</label>
+                            <input type="text" name="email" id="email" class="form-control mb-2">
+                            <p id="messageemail" class="text-danger"></p>
+                            <label class="font-weight-bold">Gender :</label> 
+                            <input type="radio" name="gender" class="ml-4"> Male
+                            <input type="radio" name="gender" class="ml-4" > Female<br>
+                            <p id="messagegender" class="text-danger"></p>
+                            <label class="font-weight-bold">Qualification :</label>
+                            <select name="qualification" id="qualification" class="form-control mb-2">
+                               <option value="Select Qualification">Select Qualification</option>
+                                <option >B.Tech</option>
+                                <option >MBA</option>
+                                <option >MCA</option>
+                                <option >Others</option>
+                            </select>
+                            <p id="messagequal" class="text-danger"></p>
+                            <label class="font-weight-bold">Position Applied For :</label>
+                            <select name="position" id="position" class="form-control mb-2">
+                               <option value="Select Position">Select Position</option>
+                                <option>Front End Developer</option>
+                                <option>Marketing Executive</option>
+                                <option>Graphic Designer</option>
+                            </select>
+                            <p id="messageposi" class="text-danger"></p>
+                            <label class="font-weight-bold">Experience :</label>
+                            <select name="experience" id="experience" class="form-control mb-2">
+                               <option value="Select Experience">Select Experience</option>
+                                <option>0 yrs (Fresher)</option>
+                                <option>1 yrs</option>
+                                <option>2 yrs</option>
+                                <option>3 yrs</option>
+                                <option>4 yrs</option>
+                                <option>4+ yrs</option>
+                            </select>
+                            <p id="messageexp" class="text-danger"></p>
+                            <label class="font-weight-bold">Upload Resume :</label>
+                            <input type="file" name="resume" id="resume" class="form-control">
+                            <p id="messagefile" class="text-danger"></p>
+                            </div>
+                        
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-success" >Submit</button>
+                        <button type="reset" class="btn btn-success">Reset</button>
+                        
+                       
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <div class="modal fade" id="submit">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Your Application is Submitted Successfully.
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+     </div>
+ </section>
+ 
+<section id="footer" class="p-4 bg-dark text-muted">
+    <div class="container">
+        <div class="row">
+            <div class="footerhead col-lg-4 col-md-4 col-sm-12 mb-4">
+                <h2><a href="ystechnical.html">YS Technical</a> <small>&copy; 2020</small></h2>
+            </div>
+            <div class="footertext col-lg-2 col-md-2 col-sm-3 col-6 mb-2">
+                <h6 class="mb-3 mt-2">About Us</h6>
+                <p><a href="ysabout.html">Our Work</a></p>
+                <p><a href="yscareers.html">Careers</a></p>
+                <p><a href="ysfaqs.html">FAQ's</a></p>
+            </div>
+            
+            <div class="footertext col-lg-2 col-md-2 col-sm-3 col-6 mb-2">
+            <h6 class="mb-3 mt-2">Follow Us</h6>
+            <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+            <p><a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+            </div>
+            <div class="footertext col-lg-2 col-md-2 col-sm-3 col-6 mb-2">
+            <h6 class="mb-3 mt-2">Contact Us</h6>
+            <p><a href="yscontact.html">Our Office</a></p>
+            <p><a href="yscontact.html">Helpline</a></p>
+            </div>
+            <div class="footertext col-lg-2 col-md-2 col-sm-3 col-6 mb-2">
+            <h6 class="mb-3 mt-2">Legal</h6>
+               <p><a href="yslegal.html">Privacy Policy</a></p>
+                <p><a href="yslegal.html">Terms & Conditions</a></p>  
+            </div>
+        </div>
+    </div>
+     <h6 class="text-center mt-5">Copyright &copy; 2020, Designed by Piyush Saini</h6>
+     <p class="last text-center">All rights reserved.</p>
+ </section> 
+
+<script type="text/javascript">
+
+    function validation(){
+        
+        var text= document.getElementById('name').value;
+        var email= document.getElementById('email').value;
+        var gender= document.myform.gender;
+        var qual= document.getElementById('qualification').value;
+        var position= document.getElementById('position').value;
+        var exp= document.getElementById('experience').value;
+        var resume= document.myform.resume;
+        var filepath= resume.value;
+        var extension= /(\.docx|\.pdf)$/i;
+        
+        if(text==""){
+            document.getElementById('messagename').innerHTML= "*Please enter name";
+            return false;
+        }
+        if(!isNaN(text)){
+            document.getElementById('messagename').innerHTML= "*Please enter a valid name";
+            return false;
+        }
+        if(email==""){
+            document.getElementById('messageemail').innerHTML= "*Please enter email id";
+            return false;
+        }
+        if(email.indexOf('@')<=0){
+            document.getElementById('messageemail').innerHTML= "*Please enter correct email id";
+            return false;
+        }
+        if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.')){
+            document.getElementById('messageemail').innerHTML= "*Please enter correct email id";
+            return false;
+        }
+        if(gender.value.length<=0){
+            document.getElementById('messagegender').innerHTML= "*Please select gender";
+            return false;
+        }  
+        if(qual=="Select Qualification"){
+             document.getElementById('messagequal').innerHTML= "*Please  select qualification";
+             return false;
+        }
+        if(position=="Select Position"){
+             document.getElementById('messageposi').innerHTML= "*Please  select position";
+             return false;
+        }
+        if(exp=="Select Experience"){
+             document.getElementById('messageexp').innerHTML= "*Please  select experience";
+             return false;
+        }
+        if(filepath.length<=0){
+            document.getElementById('messagefile').innerHTML= "*Please upload resume";
+            return false;
+        }
+        if(!extension.exec(filepath)){
+            document.getElementById('messagefile').innerHTML= "*Please upload .pdf or .docx file only";
+            return false;
+        }
+        
+        alert("Your Application is Submitted Successfully");
+            
+    }
+</script>
+</body>
+</html>
